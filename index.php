@@ -19,7 +19,13 @@
 				<li><a href="dojazd.html">Dojazd</a></li>
 				<li><a href="oferta.html">Oferta</a></li>
 				<li><a href="czat.html">Czat</a></li>
-				<li><a href="login.html">Login</a></li>
+				<li><?php
+					if($_COOKIE['admin']){
+						echo '<a href="logout.php">Wyloguj</a>';
+					} else {
+						echo '<a href="login.html">Login</a>';
+					}
+				?></li>
 			</ul>
 		</div>
 		<div class="col-s-1 col-8">
