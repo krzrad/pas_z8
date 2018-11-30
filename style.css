@@ -7,6 +7,17 @@ img {
 	height: auto;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+	float: left;
+    padding: 15px;
+}
+
 .col-s-1 {width: 50%;}
 .col-s-2 {width: 100%;}
 
@@ -21,10 +32,4 @@ img {
 	.col-8 {width: 80%;}
 	.col-9 {width: 90%;}
 	.col-10 {width: 100%;}
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }

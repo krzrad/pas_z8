@@ -6,21 +6,23 @@
 	<script src="./ckeditor/ckeditor.js"></script>
 </head>
 <body>
-	<div id="row">
+	<div class="row">
 		<div id="col-s-2 col-10">
 			<img alt="Januszex sp. b.o." src="januszex.png">
 		</div>
 	</div>
-	<div id="row">
-		<div id="col-s-1 col-2">
-			<ul><a href="ofirmie.html">O firmie</ul>
-			<ul><a href="kontakt.html">Kontakt</ul>
-			<ul><a href="dojazd.html">Dojazd</ul>
-			<ul><a href="oferta.html">Oferta</ul>
-			<ul><a href="czat.html">Czat</ul>
-			<ul><a href="login.html">Login</a></ul>
+	<div class="row">
+		<div class="col-s-1 col-2">
+			<ul>
+				<li><a href="ofirmie.html">O firmie</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="dojazd.html">Dojazd</a></li>
+				<li><a href="oferta.html">Oferta</a></li>
+				<li><a href="czat.html">Czat</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
 		</div>
-		<div id="col-s-1 col-8">
+		<div class="col-s-1 col-8">
 				<?php
 					if($_COOKIE['admin']){
 						echo "<form method=\"post\" action=\"commit.php\">
