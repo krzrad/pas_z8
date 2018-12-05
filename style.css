@@ -3,8 +3,11 @@
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .row::after {
@@ -33,3 +36,14 @@ img {
 	.col-9 {width: 90%;}
 	.col-10 {width: 100%;}
 }
+.menu ul {
+	list-style-type: none;
+}
+.menu li {
+	background-color: #007f00;
+	color: #ffffff;
+}
+#map {
+	width: 800px;
+	height: 600px;
+};

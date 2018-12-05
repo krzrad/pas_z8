@@ -11,8 +11,9 @@
 		echo "Error: ".mysqli_connect_error().PHP_EOL;
 		exit;
 	};
+	echo $_POST."<br>";
 	mysqli_query($con,"SET NAMES utf8");
-	mysqli_query($con,"UPDATE zawartoscStrony SET zawartosc='".$_POST['edit']."' where id = 'ofirmie'") 
+	mysqli_query($con,"UPDATE zawartoscStrony SET zawartosc='".$_POST['edit']."' where id = '".$_POST['p']"'") 
 		or die(mysqli_error($con));
 	header ("Location: index.php");
 ?>
