@@ -74,7 +74,7 @@
 								<textarea name=\"edit\" id=\"edit\" rows=\"10\" cols=\"80\">
 								</textarea>
 								<script>CKEDITOR.replace( 'edit' ).setData('".str_ireplace(array("\r\n","\r","\n"),'',$rekord['zawartosc'])."');</script>
-								<input type=\"hidden\" name=\"p\" value=".$p.">
+								<input type=\"hidden\" name=\"p\" value=\"$p\">
 								<input type=\"submit\" value=\"Zapisz\">
 							</form>";
 						} else {

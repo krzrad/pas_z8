@@ -10,10 +10,12 @@
 		echo "Err. no.: ".mysqli_connect_errno().PHP_EOL;
 		echo "Error: ".mysqli_connect_error().PHP_EOL;
 		exit;
-	};
-	echo $_POST."<br>";
-	mysqli_query($con,"SET NAMES utf8");
-	mysqli_query($con,"UPDATE zawartoscStrony SET zawartosc='".$_POST['edit']."' where id = '".$_POST['p']"'") 
-		or die(mysqli_error($con));
-	header ("Location: index.php");
+	}
+	if(isset($_POST['edit']) and isset($_POST['p'])){
+		mysqli_query($con,"SET NAMES utf8");
+		mysqli_query($con,"UPDATE zawartoscStrony SET zawartosc='".$_POST['edit']."' where id = '".$_POST['p']."'") 
+			or die(mysqli_error($con));
+		header ("Location: index.php");
+	} else echo "nie odebrano danych :(";
+	mysqli_close($con);
 ?>
