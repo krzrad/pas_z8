@@ -6,6 +6,7 @@
 	<script src="./ckeditor/ckeditor.js"></script>
 </head>
 <body>
+<br>
 	<div class="row">
 		<div class="col-s-2 col-10 tytul">
 		<?php if($_COOKIE['admin']) echo '<a href=obrazek.html>' ?>
@@ -31,6 +32,8 @@
 		<?php if($_COOKIE['admin']) echo '</a>' ?>
 		</div>
 	</div>
+	<a href="http://translate.google.com/translate?hl=pl&amp;ie=UTF8&amp;sl=pl&amp;tl=en&amp;u=
+http://kradowskiworkplace.pl/zadanie8/index.php" target="_blank">tłumaczenie</a>
 	<div class="row">
 		<div class="col-s-1 col-2 menu">
 			<ul>

@@ -47,7 +47,7 @@
 						"Update zawartoscStrony set zawartosc='".'januszex.'.$ext."' where id='obrazek'");
 					break;
 				default:
-					echo "Ten plik nie jest akceptowalny! >:(<br>"
+					echo "Ten plik nie jest akceptowalny! >:(<br>";
 					break;
 			}
 			

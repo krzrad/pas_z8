@@ -12,6 +12,7 @@ $chatForm.on("submit", function(event){
 		$(chat).append($zapytanie.val());
 		$(chat).append("<br>");
 		$(chat).append(res);
+		$(chat).append("<br>");
 	}).fail(function(){
 		$(chat).html('nie działa');
 	}).always(function(){
